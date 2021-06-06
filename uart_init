@@ -1,6 +1,6 @@
 		// This is not the final version of the function
     
-    void uart_init(void) 			// initializing UART portE (rx)
+   		void uart_init(void) 	// initializing UART portE (rx)
 		{
 		SYSCTL_RCGCUART_R |= 0x0010;
 		SYSCTL_RCGCGPIO_R |= 0x10;
