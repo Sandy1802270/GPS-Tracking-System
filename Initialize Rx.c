@@ -1,3 +1,5 @@
+	// This is not the final version of the function.
+
 	char* init_Rx()
         {
         int i;
