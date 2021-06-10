@@ -1,4 +1,14 @@
-double Calc_distance(double latitude1, double longitude1,double latitude2,double longitude2) {
+double Degtodecimal(double x){
+int degree = x/100;
+double minutes = x - degree * 100 ;
+double y = degree + minutes/60 ;
+return y;
+}
+double Calc_distance(double lat1, double long1,double lat2,double long2) {
+    double latitude1=Degtodecimal( lat1);
+    double longitude1=Degtodecimal( long1);
+    double latitude2=Degtodecimal( lat2);
+    double longitude2=Degtodecimal( long2);
 #define R 6371
 #define pi 3.141592653589793238462643
     double a1=0;
@@ -8,4 +18,4 @@ double Calc_distance(double latitude1, double longitude1,double latitude2,double
     double distance=R * a1;
     return distance*1000;
 }
-//the total distance is calculated in main by calling this function
+//the total distance is calculated in main by calling the Calc_distance function
