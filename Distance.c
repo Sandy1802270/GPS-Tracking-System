@@ -5,9 +5,16 @@ float Degtodecimal(double x){
 	return y;
 	}
 
-	// we didn't use the following function 
-    	//"haversine" formula 
-	double Calc_distance(double latitude1, double longitude1,double latitude2,double longitude2) {
+// for distance calculation we used this function :
+double Calc_distance(double latitude11, double longitude11,double latitude2,double longitude2){
+	double distance = sqrt(pow((latitude11-latitude2),2)+pow((longitude2-longitude11),2));
+	distance = distance*100000;
+	return distance;
+	}
+	
+
+// we didn't use the following function (haversine formula) 
+double Calc_distance(double latitude1, double longitude1,double latitude2,double longitude2) {
 	double latitude1=Degtodecimal( lat1);
 	double longitude1=Degtodecimal( long1);
 	double latitude2=Degtodecimal( lat2);
@@ -20,3 +27,4 @@ float Degtodecimal(double x){
 	double distance=R * a1;
 	return distance*1000;
 	}
+
