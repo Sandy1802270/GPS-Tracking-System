@@ -1,4 +1,4 @@
-
+//not in a function form as it returns 2 variables
                 for(i =0 ; i<200 ; i++){
                 while((UART7_FR_R&0X10)!=0){}
                 turnledon();
