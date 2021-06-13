@@ -6,7 +6,7 @@ float Degtodecimal(double x){
 	}
 
 	// we didn't use the following function 
-    //"haversine" formula 
+    	//"haversine" formula 
 	double Calc_distance(double latitude1, double longitude1,double latitude2,double longitude2) {
 	double latitude1=Degtodecimal( lat1);
 	double longitude1=Degtodecimal( long1);
