@@ -7,7 +7,7 @@ int arr[]={63 , 6 , 91 , 79 , 102 , 109 , 125 , 7 , 127 , 111 };
                         distance=distance/10;
                     }
                         //display for 2.5 sec
-                        for(i=0 ; i<800 ; i++){
+                        for(i=0 ; i<300 ; i++){
                         //pin-->8 =0 toggle 3rd screen
                         GPIO_PORTA_DATA_R =0XDF;
                         GPIO_PORTB_DATA_R = arr[digits[0]];
