@@ -1,6 +1,4 @@
-void turnledon(int TotalDist)
-{   if ( TotalDist >=100)
-{
-GPIO_PORTF_DATA_R   = 0x02 ;
-}
+void turnledon(int t)
+{   if ( t >=100)
+GPIO_PORTF_DATA_R   = 0x03 ;
 }
